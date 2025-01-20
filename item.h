@@ -9,7 +9,7 @@ class Item{
     virtual ~Item() = default;
     virtual void display() const = 0; //const? //
 
-    virtual std::string getTitle() const;
+    virtual std::string getTitle() const = 0;
 
   protected:
     std::string title_ = "";
